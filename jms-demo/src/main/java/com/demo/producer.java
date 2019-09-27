@@ -35,7 +35,7 @@ public class producer {
 
         TextMessage message = session.createTextMessage();
 
-        message.setText("Enjoy fucking holiday!");
+        message.setText("Message from a Topic!");
         // Here we are sending the message!
         producer.send(message);
         System.out.println("Sent message '" + message.getText() + "'");
